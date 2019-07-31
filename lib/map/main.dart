@@ -5,12 +5,13 @@ import 'package:easy_alert/easy_alert.dart';
 
 void main() {
   /*============*/
-  //设置ios的key
+  //设置android的key
   /*=============*/
-  AMapLocationClient.setApiKey("a5bae506b2d053ed4ae7827f38b1766d");
+  //AMapLocationClient.setApiKey("a5bae506b2d053ed4ae7827f38b1766d");
   /*============*/
   //设置ios的key
   /*=============*/
+  AMapLocationClient.setApiKey("903d468423f2f9f9c9a34fe854fe4f87");
 
   runApp(new MaterialApp(
     home: new Home(),
