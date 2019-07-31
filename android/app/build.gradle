@@ -44,6 +44,11 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+		manifestPlaceholders = [
+			AMAP_KEY : "6389d3d8c7583c3634f93c22b0c639c3", /// 高德地图key
+		]
+
     }
 
     buildTypes {
@@ -60,6 +65,7 @@ flutter {
 }
 
 dependencies {
+	implementation 'com.amap.api:location:latest.integration'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
