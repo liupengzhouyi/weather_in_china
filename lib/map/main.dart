@@ -25,21 +25,6 @@ void main() {
 
 
 
-String getLocationStr(AMapLocation loc) {
-  if (loc == null) {
-    return "正在定位";
-  }
-
-  if (loc.isSuccess()) {
-    if (loc.hasAddress()) {
-      return "定位成功: \n时间${loc.timestamp}\n经纬度:${loc.latitude} ${loc.longitude}\n 地址:${loc.formattedAddress} 城市:${loc.city} 省:${loc.province}";
-    } else {
-      return "定位成功: \n时间${loc.timestamp}\n经纬度:${loc.latitude} ${loc.longitude}\n ";
-    }
-  } else {
-    return "定位失败: \n错误:{code=${loc.code},description=${loc.description}";
-  }
-}
 
 
 
